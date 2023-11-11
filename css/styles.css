@@ -477,14 +477,15 @@ letter-spacing: 0.02em;
     .team-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         column-gap: 24px;
         row-gap: 64px;
              
     }   
 
 .team-list-item {
-    margin: 0;
+    margin:0;
     padding: 0;
     /* width: calc((100% - 24px) / 2); */
   
@@ -499,11 +500,7 @@ letter-spacing: 0.02em;
         width: 1158px;
     }
 
-.team-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    }
+
 .team-list-item {
     width: calc((100% - 72px) / 4);
 }
@@ -578,17 +575,19 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         width: 736px;
        }
 .portfolio-list-item {
-    width: 288px;
-    height: 400px;
+    width: 356px;
+    height: 420px;
     width: calc((100% - 24px) / 2);
+    margin: 0;
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     column-gap: 24px;
     row-gap: 72px;
-         
+        
 }   
 .portfolio-list-img {
     width: 356px;
@@ -600,4 +599,55 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* ==============Portfolio tablet styles=========== */
 
 /* ==============Portfolio desktop styles=========== */
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .portfolio-list {
+        
+        row-gap: 48px;
+    }
+
+    .portfolio-list-item {
+        width: calc((100% - 48px) / 3); 
+          transform: translateY(0%);
+      }
+      .overlay-wrap {
+        position: relative; 
+           overflow: hidden; 
+       }
+       
+       .overlay-text {
+           position: absolute;
+           font-size: 16px;
+           font-weight: 400;
+           line-height: 1.5;
+           letter-spacing: 0.02em;
+           padding: 40px 32px;
+           top: 0;
+           left: 0;
+           background-color:#4D5AE5;
+           color: #F4F4FD;
+           overflow: auto;
+           height: 100%;
+           transform: translateY(100%);
+           transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       }
+       
+       .portfolio-list-item:hover .overlay-text {
+       transform: translateY(0%);
+       }
+       
+       .portfolio-list-item:hover {
+           box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+       }
+
+       .portfolio-list-img {
+        width: 360px;
+        
+    } 
+
+}
+
 /* ==============Portfolio desktop styles=========== */
