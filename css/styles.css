@@ -239,21 +239,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 96px;
     
     }
-/* .benefits-container {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-    min-width: 320px;
-    max-width: 1158px;
-    margin: 0 auto;
-} */
+
 .icon-benefits-container {
     display: none;
 }
-/* .benefits-list {
-    display: block;
-    
-} */
 
 .benefits-list-item {
     display: block;
@@ -379,10 +368,11 @@ letter-spacing: 0.02em;
 /* ==============Benefits desktop styles=========== */
 
 /* ==============Team mobile styles=========== */
-.team {
+    .team {
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
+   padding: 96px 12px;
+   margin: 0 auto;
+   
     }
     
     .team-title {
@@ -396,13 +386,11 @@ letter-spacing: 0.02em;
     margin-bottom: 72px;
     padding: 0 auto;
     }
-    
-    /* .team-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    } */
-    
+ 
+    .team-list {
+        display: block;
+        
+    }
     
     .team-list-item {
     background-color: #FFFFFF;
@@ -412,10 +400,8 @@ letter-spacing: 0.02em;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     width: 264px;
     height: 428px;
-    /* margin-left: auto;
-    margin-right: auto; */
     margin-bottom: 72px;
-        
+      margin: 0 auto;  
     }
     
     .team-card-content {
