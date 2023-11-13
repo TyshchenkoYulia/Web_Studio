@@ -111,7 +111,19 @@ span {
 .button-icon-burger {
     fill: #2F2F37;
 }
-/* .mobile-menu {
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 352px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ==============Mobile menu styles=========== */
+
+@media screen and (max-width: 767px) {
+  /* .mobile-menu {
     position: fixed;
     left: 0;
     right: 0;
@@ -173,25 +185,45 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #404BBF;
     
 } */
-/* ==============Header mobile styles=========== */
+}
 
-@media screen and (max-width: 767px) {
-  .button-burger {
-  
+
+
+
+
+
+
+
+/* ==============Header mobile styles=========== */
+/* ==============Header tablet styles=========== */
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        width: 736px;      
+    }
+
+    .button-burger {
+        display: none;
   }
+
     .menu {
-        display: flex;
-        gap: 40px;
-    }
-    .address {
-        font-style: normal;
-    }
+    display: flex;
+    column-gap: 40px;
+  }
+  
+   
     .address-menu {
         display: flex;
         gap: 40px;  
         padding: 24px 0;
     }
-    
+
+     .address {
+        font-style: normal;
+        flex-direction: column;
+    }
+
     .menu-link {
     font-size: 16px;
     font-weight: 500;
@@ -247,60 +279,158 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
     }
 }
-
-
-
-
-
-@media screen and (min-width: 480px) {
-    .container {
-        width: 352px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
-/* ==============Header mobile styles=========== */
-@media screen and (min-width: 768px) {
-    .container {
-        width: 736px;
-        
-    }
-}
-
-/* ==============Header tablet styles=========== */
-.menu {
-    display: flex;
-    column-gap: 40px;
-  }
-
 /* ==============Header tablet styles=========== */
 
+/* ==============Header desktop styles=========== */
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
        
     }
 }
-
-
 /* ==============Header desktop styles=========== */
-/* ==============Header desktop styles=========== */
-
-
-
-
-
-
 
 /* ==============Hero mobile styles=========== */
+
+.hero {
+    background-color:#2e2f42;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)), 
+            url("../images/hero/bg-hero-mobile.jpg");
+    background-size: cover;
+    max-width: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    }
+
+    .main-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #ffffff; 
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+        width: 168px;
+        text-transform: capitalize;
+        }
+        
+    .order-service-btn {  
+           
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.50;
+            letter-spacing: 0.04em;
+            background-color: #4D5AE5;
+            color:  #FFFFFF; 
+            align-items: center;
+            margin: 0 auto;
+            display: block;
+            min-width: 169px;
+            height: 56px;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            
+            .order-service-btn:hover,
+            .order-service-btn:focus {
+            background-color: #404BBF;
+            color:  #FFFFFF;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)), 
+            url("../images/hero/bg-hero-mobile@2x.jpg");
+         }
+}
+
+
 /* ==============Hero mobile styles=========== */
 
 /* ==============Hero tablet styles=========== */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 736px;      
+    }
+
+    .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)), 
+            url("../images/hero/bg-hero-tablet.jpg");
+    max-width: 768px;  
+}
+
+.main-title {
+    width: 496px;
+    font-size: 56px;
+    line-height: 1.07; 
+}
+ 
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .hero {
+    background-image:  linear-gradient(rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)), 
+        url('../images/hero/bg-hero-tablet@2x.jpg');
+  }
+}
+
+
+
 /* ==============Hero tablet styles=========== */
 
 /* ==============Hero desktop styles=========== */
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+       
+    }
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)), 
+            url("../images/hero/bg-hero-desktop.jpg");
+    max-width: 1158px;  
+}
+
+.main-title {
+    width: 496px;
+
+}
+
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)), 
+         url('../images/hero/bg-hero-desktop@2x.jpg');
+  }
+}
+
+
 /* ==============Hero desktop styles=========== */
 
 /* ==============Benefits mobile styles=========== */
