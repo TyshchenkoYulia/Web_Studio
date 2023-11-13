@@ -124,6 +124,10 @@ span {
 /* ==============Mobile menu styles=========== */
 
 @media screen and (max-width: 767px) {
+
+
+
+
   .mobile-menu {
     position: fixed;
     left: 0;
@@ -154,7 +158,7 @@ transform: translateX(0%);
     position: absolute;
     top: 24px;
     right: 24px;
-    
+    fill: #2E2F42;
     border-radius: 50%;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -168,7 +172,7 @@ transform: translateX(0%);
 }
 
 .mobile-menu-close-button {
-    fill: #2E2F42;
+    
 }
 .mobile-menu-link {
    color: #2E2F42;
@@ -186,7 +190,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #404BBF;
     
 }
-}
+
 
 
 
