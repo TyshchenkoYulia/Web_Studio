@@ -1215,7 +1215,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.icon-social-networks {
+.mobile-icon-social-networks {
     display: flex;
     justify-content: start; 
     gap: 40px;
@@ -1528,8 +1528,26 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 /* ==============Backdrop mobile styles=========== */
 
-/* ==============Backdrop tablet styles=========== */
-/* ==============Backdrop tablet styles=========== */
+/* ==============Backdrop tablet+ desktop styles=========== */
 
-/* ==============Backdrop desktop styles=========== */
-/* ==============Backdrop desktop styles=========== */
+@media screen and (min-width: 768px), (min-width: 1158px) {
+
+.modal {
+    width: 408px;
+    max-height: 584px;
+}
+
+.privacy-policy-span {
+    display: flex;
+    flex-direction: row;
+column-gap: 5px;
+}
+
+
+}
+
+
+    
+
+/* ==============Backdrop tablet + desktop styles=========== */
+
