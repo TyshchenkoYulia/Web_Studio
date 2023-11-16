@@ -799,7 +799,7 @@ color: #434455;
 }   
 .portfolio-list-img {
     width: 356px;
-    height: 300px;
+    
 }
 
 
@@ -935,10 +935,10 @@ color: #434455;
       background-color: #31D0AA;
       
   }
-  .page-footer-icon {
+  /* .page-footer-icon {
     margin-bottom: 72px;
   }
-  
+   */
   
   .footer-form-subscribe-title {
       color:#FFFFFF;
@@ -1022,7 +1022,7 @@ color: #434455;
 
 .page-footer-logo-text {
      margin-right: 24px;
-     margin-bottom: 0;
+     /* margin-bottom: 0; */
     
 }
 .page-footer-text {
@@ -1086,6 +1086,7 @@ color: #434455;
       
     .page-footer-logo-text {
           margin-right: 120px;
+          margin-bottom: 0;
       }
 
     .page-footer-icon-link:hover, 
